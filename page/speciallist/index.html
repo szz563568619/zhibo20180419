@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>名师团队</title>
+<link type="text/css" rel="stylesheet" href="css/team.css?v=6.0"/>
+</head>
+<body>
+<div class="sp-banner">
+			<div class="hd">
+				<ul><li class="on"></li><li></li><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><div class="sp-home-banner"><a href="javascript:" onclick="qq_click(this)"  data-resource="讲师介绍-庄老师" style="background: url(./images/zhuang.jpg) center center no-repeat;"></a></div></li>
+					<li><div class="sp-home-banner"><a href="javascript:" onclick="qq_click(this)"  data-resource="讲师介绍-东方红老师" style="background: url(./images/dfh.jpg?v=1.0) center center no-repeat;"></a></div></li>
+					<li><div class="sp-home-banner"><a href="javascript:" onclick="qq_click(this)"  data-resource="讲师介绍-博文老师" style="background: url(./images/bowen.jpg) center center no-repeat;"></a></div></li>
+					<li><div class="sp-home-banner"><a href="javascript:" onclick="qq_click(this)"  data-resource="讲师介绍-叶秋老师" style="background: url(./images/yeqiu.jpg?v=2.0) center center no-repeat;"></a></div></li>
+				</ul>
+			</div>
+			<a class="prev" href="javascript:void(0)" target="_self"></a>
+			<a class="next" href="javascript:void(0)" target="_self"></a>
+		</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="./jquery.SuperSlide.2.1.1.js"></script>
+<script>
+$(function(){
+	jQuery(".sp-banner").slide({mainCell:".bd ul",autoPlay:false});
+})
+
+function qq_click(dom){
+	parent.CLICK_RESOURCE = $(dom).attr('data-resource');//添加点击来源
+	parent.qq_start();
+}
+
+</script>
+</body>
+</html>

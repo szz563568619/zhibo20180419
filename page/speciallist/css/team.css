@@ -1,0 +1,26 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;vertical-align: baseline;	background: transparent;	list-style:none;	vertical-align: middle;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {	quotes: none;}
+
+html, body{height: 100%; overflow: hidden;}
+/*轮播图*/
+.sp-banner{width:900px;height:600px; position:relative;overflow:hidden; z-index:0;}
+.sp-banner .hd{position:absolute; z-index:3; bottom:10px; right:20px; height:15px; +height:30px;margin: 0 auto;}
+.sp-banner .hd ul{overflow:hidden; zoom:1;}
+.sp-banner .hd ul li{width:12px; height:12px; background:#fff; cursor:pointer; display:inline-block; *display:inline; zoom:1; overflow:hidden; line-height:9999px; margin-left:10px;border-radius: 50%;}
+.sp-banner .hd ul li.on{ background:#dd0000;}
+.sp-banner .bd{position:relative; z-index:1;height:600px; overflow:hidden;}
+.sp-banner .bd ul{ width:900px !important; height:600px; overflow:hidden;}
+/*.banner .bd ul li{position:relative;width:100% !important;height:370px; overflow:hidden;}*/
+.sp-banner .bd li a{ height:600px; display:block;}
+.sp-banner .bd ul li .sp-home-banner{height: 600px; width:900px;}

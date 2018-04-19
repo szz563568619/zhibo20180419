@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产品介绍</title>
+<link type="text/css" rel="stylesheet" href="jieshao.css"/>
+</head>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$(function(){
+	$(".ul_nav li").each(function(index) {	
+		$(this).hover(function() {            
+       $(".ul_nav li").removeClass("inner_contain_current");
+	   $(this).addClass("inner_contain_current");
+	   $(".ul_contain li").css("display","none");
+	   $(".ul_contain li").eq(index).css("display","block");
+	    });
+    });
+	
+		
+	$('.wrap_product').find('.imgs').find('img').mouseover(function(){
+		
+		var index=$(this).index();
+			
+		var index01=index+1;
+		
+		$('.wrap_product').find('.imgs').find('img').each(function(i){
+					
+			var d = i + 1;
+				console.log(1);
+			$(this).attr('src','images/jieshao_'+d+'.png');
+
+		});
+
+	    $(this).attr('src','images/jieshao_'+index01+'.'+index01+'.png');
+
+		$('.wrap_product').find('.words').find('.words_f').hide();
+
+		$('.wrap_product').find('.words').find('div:eq('+index+')').show();
+
+	})	
+})
+</script>
+
+
+
+<body>
+<!--产品介绍开始-->
+
+<div class="wrap_product" id="wrap_product">
+	<div class="product">
+    	<div class="tupian1">
+        	<div class="inner_tupian1">
+            	<div class="inner_bigimg"><img  src="images/jieshao.jpg" alt=""/></div>
+                <div class="inner_contain">
+                	<ul class="ul_nav">
+                    	<li class="inner_contain_current">
+                        	<p>公司简介</p>
+                        </li>
+                        <li>
+                        	<p>产品介绍</p>
+                        </li>
+                        <li>
+                        	<p>产品对比</p>
+                        </li>
+                        <li>
+                        	<p>产品优势</p>
+                        </li>
+                        <li>
+                        	<p>资金安全</p>
+                        </li>
+                        <li>
+                        	<p>盈利模式</p>
+                        </li>
+                    </ul>
+                    <ul class="ul_contain">
+                    	<li class="company_about">
+                        	<img src="images/person_1.png" alt=""/>
+                            <p class="company_about_words">壹银财富旗下有升昱投资、华瀚企业咨询、广东壹银贵金属等
+多家下属单位。壹银贵金属是广东省贵金属交易中心第099号会员、
+2014贵金属行业发展新锐，是立志打造国内较有影响力的贵金属投
+资服务平台。针对不同投资人群，公司推出A+B理财计划，在股市、
+贵金属等多领域均取得骄人战绩。公司具有近百位专家级分析师，私人财富管理标志性企业。</p>
+                        </li>
+                        <li class="productAB_about">
+                        	<div class="productAB_about_left">
+                            	<img src="images/person.png" alt="" class="name">
+                                <div class="productAB_about_left_chat">
+                                		<p class="productAB_about_left_p1">马科纬茨<span>Harry Markowitz</span></p>
+                                		<p class="productAB_about_left_p2">1990年诺贝尔经济学获得者、有“现代金融学之父”之称</p>
+                                    <div class="productAB_about_left_words">
+                                    	<p class="productAB_about_left_words1">长期统计数据分析得出</p>
+                                        <p class="productAB_about_left_words2">组合投资可以降低50%的风险</p>
+                                        <p class="productAB_about_left_words3">财富稳定倍增从优化组合开始</p>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="productAB_about_right">
+                            	<div class="productAB_about_right_p1">
+                                	<p>不要把鸡蛋放在一个篮子里</p>
+                                </div>
+                                <p class="productAB_about_right_p2">摒弃旧式理财思维<br/>投资进入多元化  组合实现最优化</p>
+                                <h3>双轮驱动</h3>
+                                <div class="productAB_about_right_words">
+                                	<dl class="productAB_about_right_words_dl marginR25">
+                                    	<dt>股票</dt>
+                                       
+                                        <dd>股票中长线，锁定【壹银<br/>财富股票池】中长线不求<br/>暴力，稳中求胜。</dd>
+                                    </dl>
+                                    <dl class="productAB_about_right_words_dl">
+                                    	<dt>短线品种</dt>
+                                        
+                                        <dd>股票中长线，锁定【壹银<br/>财富股票池】中长线不求<br/>暴力，稳中求胜。</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="company">
+                        	<table border="0" cellpadding="0" cellspacing="2" width="860">
+                            	<tbody>
+                                	<tr class="tr02">
+                                    	<td>项目</td>
+                                        <td class="tr01">长安油100桶</td>
+                                        <td class="tr01">粤贵银</td>
+                                        <td>股票</td>
+                                        <td>保鲜</td>
+                                        <td>纸白银</td>
+                                        <td>白银T+D</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>交易方向</td>
+                                        <td class="tr01">双向交易</td>
+                                        <td class="tr01">双向交易</td>
+                                        <td>单向<br/>转融券可做空</td>
+                                        <td>单向</td>
+                                        <td>大多数只能做多</td>
+                                        <td>双向交易</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>交易时间</td>
+                                        <td  class="tr01">连续22小时</td>
+                                        <td  class="tr01">连续22小时</td>
+                                        <td>4小时</td>
+                                        <td>提前不宜<br/>提现前解约有损失</td>
+                                        <td>9小时</td>
+                                        <td>连续22小时</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>资金投入</td>
+                                        <td class="tr01">3%保证金</td>
+                                        <td class="tr01">8%保证金</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>13%保证金</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>风险程度</td>
+                                        <td class="tr01">随时成交<br/>杜绝坐庄风险</td>
+                                        <td class="tr01">随时成交<br/>杜绝坐庄风险</td>
+                                        <td>不能随时成交<br/>难以杜绝机构操纵</td>
+                                        <td>以备不测之需无报酬率</td>
+                                        <td>下跌行情普遍亏损</td>
+                                        <td>撮合制<br/>不完全杜绝操纵</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>
+                        	<div class="imgs">
+                            	<img src="images/jieshao_1.png" alt=""/>
+                                <img src="images/jieshao_2.png" alt=""/>
+                                <img src="images/jieshao_3.png" alt=""/>
+                                <img src="images/jieshao_4.png" alt=""/>
+                                <img src="images/jieshao_5.png" alt=""/>
+                                <img src="images/jieshao_6.png" alt=""/>
+                            </div>
+                            <div class="words">
+                            	<div class="words_f words_h" style="background:#cb7c03;">新兴投资品种，门槛低，机会多。</div>
+                                <div class="words_f" style="background:#ef5e89;">利用率最高的动态准备金率为３％的履约准备金，提高资金利用率，这是其他投资产品无法比拟的。</div>
+                                <div class="words_f" style="background:#2cb999;">现货交易可当天买卖，涨跌均可获益。</div>
+                                <div class="words_f" style="background:#d4cc3e;">交易品种单一，只须预测涨跌方向即可赚钱，简单、轻松。</div>
+                                <div class="words_f" style="background:#249dc8;">现货交易是全球市场，没有任何机构、个人能够操纵，影响价格。</div>
+                                <div class="words_f" style="background:#cb7c03;">交易品种单一，只须预测涨跌方向即可赚钱，简单、轻松。</div>
+                            </div>
+                        </li>
+                        <li class="zijin">
+                        	<h3>合作银行   资金安全</h3>
+                            <img src="images/jieshao_7.png" alt=""/>
+                        </li>
+                        <li class="yinling">
+                        	<img src="images/jieshao_8.png" alt=""/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品介绍结束--
+</body>
+</html>

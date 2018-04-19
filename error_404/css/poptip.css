@@ -1,0 +1,59 @@
+/*弹窗函数样式*/
+.pop {
+position: absolute;
+    width: auto;
+    height: 38px;
+    border: solid 4px #e5e5e5;
+    z-index: 9999;
+    font-family: 'Microsoft YaHei';
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    list-style: none;
+    padding: 0;
+    background: #ebebeb;
+    line-height: 38px;
+    border-radius: 4px;
+}
+
+.pop_base {
+	width: 38px;
+	height: 38px;
+	float: left;
+}
+
+.pop_true {
+	background: url(../images/ico.png) no-repeat left top;
+}
+
+.pop_tip {
+	background: url(../images/ico.png) no-repeat left bottom;
+}
+
+.pop_loadding {
+	background: url(../images/loading.gif) no-repeat center;
+}
+
+.pop_fail {
+	background: url(../images/ico.png) no-repeat left -38px;
+}
+
+.pop_info {
+	padding: 0 6px 0 6px;
+	text-align: left;
+	font-size: 14px;
+	color: #333;
+	font-family: "微软雅黑";
+}
+/*遮照*/
+.pop_remove {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	z-index: 900;
+	position: fixed;
+	left: 0;
+	top: 0;
+}

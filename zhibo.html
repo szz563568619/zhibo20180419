@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<style>
+.vcp-playtoggle{display: none !important;}
+.vcp-error-tips{height: 1em; top:100%; margin-top: -34px; width: 250px; left: 20px; text-align: left;}
+</style>
+<div id="id_test_video" style="width:100%; height:100%;"></div>
+<script>
+if (!Function.prototype.bind) {   
+Function.prototype.bind = function (oThis) {   
+if (typeof this !== "function") {         
+throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");   
+}   
+var aArgs = Array.prototype.slice.call(arguments, 1),   
+fToBind = this,   
+fNOP = function () {},   
+fBound = function () {   
+return fToBind.apply(this instanceof fNOP && oThis   
+? this   
+: oThis,   
+aArgs.concat(Array.prototype.slice.call(arguments)));   
+};   
+fNOP.prototype = this.prototype;   
+fBound.prototype = new fNOP();   
+return fBound;   
+};   
+} 
+
+if (!Array.prototype.filter)
+{
+  Array.prototype.filter = function(fun /*, thisArg */)
+  {
+    "use strict";
+
+    if (this === void 0 || this === null)
+      throw new TypeError();
+
+    var t = Object(this);
+    var len = t.length >>> 0;
+    if (typeof fun !== "function")
+      throw new TypeError();
+
+    var res = [];
+    var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
+    for (var i = 0; i < len; i++)
+    {
+      if (i in t)
+      {
+        var val = t[i];
+
+        // NOTE: Technically this should Object.defineProperty at
+        //       the next index, as push can be affected by
+        //       properties on Object.prototype and Array.prototype.
+        //       But that method's new, and collisions should be
+        //       rare, so use the more-compatible alternative.
+        if (fun.call(thisArg, val, i, t))
+          res.push(val);
+      }
+    }
+
+    return res;
+  };
+}
+
+Object.prototype.create = Object.prototype.create || function(obj) {
+    if (typeof obj != 'object') {//如果 obj 参数不是 nll 或一个对象值，则抛出一个 TypeError 异常。
+        throw TypeError('Object prototype may only be an Object or null');
+    }
+    if(Object.prototype.create) {
+        return Object.prototype.create; //浏览器支持就直接返回
+    }else {
+        alert(11);
+        function Temp() {}//创建一个临时性的构造函数
+        Temp.prototype = obj; //传入的参数作为构造函数的原型
+        return new Temp(); //返回临时类型的一个新实例
+    }
+};
+</script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.0.js" charset="utf-8"></script>
+<script>
+var player = new TcPlayer('id_test_video', {
+"rtmp":"rtmp://push.dianhaikeji.com/cch/first",
+"flv": "http://push.dianhaikeji.com/cch/first.flv",
+"m3u8": "http://push.dianhaikeji.com/cch/first.m3u8",
+"autoplay" : true,
+"live" : true,
+"controls": "system",
+listener: function (msg){
+                if(msg.type == 'error'){
+                    window.setTimeout(function(){
+                        player.load();
+                    },3000);
+                }
+                if(msg.type == 'pause'){
+                    player.play();
+                }
+            },
+"wording": {
+    "1002" : "直播马上开始，请稍候...",
+    "13" : "直播马上开始，请稍候...",
+    "4" : "直播马上开始，请稍候...",
+    "5" : "直播马上开始，请稍候...",
+    "2032" : "直播马上开始，请稍候..."
+}
+});
+    
+</script>
+
+</body>
+</html>

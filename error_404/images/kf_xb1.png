@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://static.huizhijr.com/css/poptip.css" type="text/css" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><script type="text/javascript" src="http://static.huizhijr.com/js/jquery-1.9.1.min.js"></script>
+<link rel="shortcut icon" href="http://static.huizhijr.com/images/favicon.ico"  type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="http://static.huizhijr.com/css/404.css"/>
+<head>
+<style type="text/css">
+#chatframe {
+    position: absolute;
+    z-index: 104;
+    height: 465px;
+    width: 650px;
+    top: 20%;
+    left: 30%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#chatTileIfame {
+    height: 37px;
+    width: 100%;
+    background: rgb(90, 151, 201);
+    cursor: move;
+}
+#chatframediv {
+    z-index: 104;
+    height: 444px;
+    width: 650px;
+    overflow: hidden;
+}
+#chatframe lable {
+    background: url(../images/kf_xb1.png);
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 13px;
+}
+#chatframe font {
+    height: 16px;
+    width: 31px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+#colseChatIframe {
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    margin-right: 11px;
+    color: #fff;
+    margin-top: 4px;
+    cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+function qqCustomer(qqStr){
+// 	$("body").find("iframe").eq(0).attr("src", "tencent://message/?uin=" + qqStr + "");
+	popwin=window.location.href='tencent://message/?Menu=yes&amp;uin=938172072&amp;Service=58&amp;SigT=A7F6FEA02730C9885C2C1D6BC02F48C13B4F510C5EFE267D99D8ED59D9EC932E996DB12CFDA09740C5D7313B19908F7756B486FE72E6BA5C58B0C9E8F91CA3AD715722D7F54EFA2AC1A5CE51426B11657CDE33E6837A4F75C964CD5A2C09566295B158862C5E4C96C3E374022F542F710ABB11F65B1CAFD0&amp;SigU=30E5D5233A443AB2AB6B9ACBBEE5239C79C41ACC3FA77C8E90FA8AF2352C1A5703C283819ADB760DB60B85ED8021071B5E9E23FBF1AFA882F0A72D166E9142DCCF8ADAC454E100A6';
+	//popwin=window.location.href="tencent://message/?Menu=yes&amp;uin="+qqStr+"&amp;Service=58&amp;SigT=A7F6FEA02730C98818FDBD9FFEB32E639F394149DD1BC9F30C308FD2B2921E524C16B2BBF9922B2854163F21CD306ACDEAA0D1BE8E44DDE402DDD6FBCD80FC1CFD37E819196901DB7030E04B0CC8D3F21FEF4304DD33E5DF83ADB6599C04408DBEE4B77A72715CFB98BA7B20796B11A0D3194F2B8106FA26&amp;SigU=30E5D5233A443AB2E4414F061D94F4CBB7FA0E480E7C8335D376984C18AAB0113C84CF19BDEF954149FB0EB2B0B1C59EEA9930861FA590361A76C445AFD1335408531B5A166FE9DD"
+}
+var sendid = ;
+var serviceId = ;
+var sendName = '';
+var serviceName = '';
+var serviceAbout = '';
+</script>
+</head>
+<body>
+IP1:<br />
+IP2:101.81.6.199<div class="bg404_center">
+  		<a class="back_zbs" href="/"></a>
+  		<a class="kefu" onclick="" href="javascript:qqCustomer('938172072')"></a>
+  	</div>
+
+    <iframe name="ajaxUploadImage" id="ajaxUploadImage" frameborder="0" width="100px" height="100px" style="display:none;" src=""></iframe>
+    <script src="/js/socket.io-1.4.5.js"></script>
+    <script src="/js/404.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

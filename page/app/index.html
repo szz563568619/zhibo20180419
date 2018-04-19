@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>汇金app下载</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		//js判断Android和iOS 
+		var u = navigator.userAgent; 
+		if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { 
+			location.href = 'http://appapi.huijinyjs.com/app/huijinrong-release-1.0.1-2.apk';
+		} else if (u.indexOf('iPhone') > -1) { 
+			location.href = 'https://itunes.apple.com/cn/app/%E6%B1%87%E9%87%91%E9%87%91%E8%9E%8D/id1329840269';
+		} else if (u.indexOf('Windows Phone') > -1) { 
+			location.href = 'http://appapi.huijinyjs.com/app/huijinrong-release-1.0.1-2.apk';
+		} 
+		//js判断微信和QQ 
+		var ua = navigator.userAgent.toLowerCase(); 
+		if(ua.match(/MicroMessenger/i)=='micromessenger') { 
+			//alert('请从浏览器打开此页面');
+		}else if(ua.match(/QQ/i) == 'qq'){ 
+		}
+	</script>
+</body>
+</html>

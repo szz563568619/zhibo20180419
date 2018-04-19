@@ -1,0 +1,52 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,p{margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;vertical-align: baseline;/*background: transparent;*/list-style:none;	vertical-align: middle;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+input{ outline:none;}
+a{ text-decoration:none;}
+
+#logi{padding:43px 69px;border-radius:3px; /*width:281px;*/ background:#fff;}
+
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+
+  #logi{
+
+ /*   background-color:#000;
+
+    filter:Alpha(opacity=75);
+
+    position:static;
+
+    *zoom:1; */
+
+  	}
+
+  /*.inner_logi{position:relative;left:0;top:0;}*/
+
+}
+
+.inner_logi input{height:43px;padding:2px 7px;font-size: 16px;line-height: 43px; border:1px solid #fe5354; border-left:none; width:214px; float:left; color:#909090;}
+
+.inner_logi div{margin-bottom:16px; overflow:hidden; width:282px;}
+
+.inner_logi div.log_pass{ margin-bottom:0;}
+
+.log_account span{ display:block; width:52px; height:49px; float:left;background:#fe5354 url(images/touxiang.png) no-repeat 10px center;}
+
+.log_pass span{background:#fe5354 url(images/mima.png) no-repeat 10px center; width:52px;height:49px; display:block; float:left;}
+
+.inner_logi .log_code{height:70px;padding:5px 0;}
+
+.inner_logi div.forget{ margin:10px 0 5px 0;}
+
+.log_code .log_code_in{width:142px;float: left; border:1px solid #fe5354; border-right:none; height:42px; line-height:42px;}
+
+.log_code .log_code_img{float:left;}
+
+.captcha{cursor: pointer;}
+
+.log_enter{background:#fe5354; border-radius:5px;height:58px;width:281px;color:#fff;font-size:18px;line-height:50px;text-align: center;font-family: "Microsoft YaHei";letter-spacing: 2px; font-weight:600; border:none; cursor:pointer;}
+
+.forget{ width:100%;}
+
+.forget a{ color:#51a4d9; font-size:12px; float:right;}

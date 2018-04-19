@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>名师团队</title>
+<link type="text/css" rel="stylesheet" href="team.css?v=1.0"/>
+</head>
+<body>
+<div class="experts" id="experts">
+	<div class="experts-box">
+		<ol class="experts_btns">
+			<li class="ol-default">陈坤老师</li>
+			<li style="display: none;">翰林老师</li>
+			<li>空明老师</li>
+			<li>张老师</li>
+			<li>柳老师</li>
+			<li>邱老师</li>
+			<li>心悦老师</li>
+		</ol>
+		<div class="experts_detail">
+			<img src="./images/1.png">
+		</div>
+	</div>
+	
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$('.experts_btns li').mouseover(function(){
+	var dom = $(this);
+	var index = parseInt(dom.index())+1;
+	dom.addClass('ol-default').siblings().removeClass('ol-default');
+	$('.experts_detail').html('<img src="./images/'+index+'.png?v=1.0">');
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员登录</title>
+<link type="text/css" rel="stylesheet" href="denglu.css"/>
+</head>
+
+<body>
+
+<div id="logi">
+	<form class="inner_logi" id="login_form">
+		<div class="log_account"><span></span><input type="text" name="user" placeholder="请输入账号"></div>
+		<div class="log_pass">
+			<span></span>
+			<input type="password" name="pwd" autocomplete="off" placeholder="请输入密码" >
+		</div>
+		<div class="forget"><!-- <a href="#">忘记密码？</a> --></div>
+		<div class="log_code"><input type="text" name="captcha" placeholder="输入验证码" class="log_code_in"><img class="log_code_img captcha" title="点击更换验证码" onclick="get_captcha()"><a href="javascript:;" onclick="get_captcha()" style=" display: block; height: 15px; width: 115px; padding-top: 10px; clear: both; float: right; font-size: 14px; text-decoration: underline;">点击更换验证码</a></div>
+		<button class="log_enter">立即登陆</button>
+		<a href="javascript:;" onclick="window.parent.document.getElementById('register').click();" style=" display: block; height: 15px; width: 135px; padding-top: 10px; clear: both; float: right; font-size: 14px; text-decoration: underline;">没有账号？点击注册</a>
+	</form>
+</div>
+
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+
+var base = parent.base;
+get_captcha();
+function get_captcha(){
+	$('.captcha').attr('src', base.url+'captcha/get_captcha'+'?time='+Date.parse(new Date()) )
+}
+
+
+/*登陆*/
+$('#login_form').submit(function (){
+	$.post(base.url+'user/login',
+		$('#login_form').serialize(),
+		function (result){
+			result = $.parseJSON(result);
+			if(result.status){
+				parent.location.reload();
+			}else{
+				alert(result.msg);
+				if(result.kefu) qq_click();
+			}
+		});
+	return false;
+})
+
+
+function qq_click()
+{
+	window.parent.CLICK_RESOURCE = '会员账号未审核';//添加点击来源
+	window.parent.qq_start();
+}
+</script>
+</body>
+</html>

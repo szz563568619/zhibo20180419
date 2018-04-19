@@ -1,0 +1,84 @@
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-o-text-size-adjust:100%;-moz-text-size-adjust:100%;height:100%;
+    width:100%;
+}
+
+
+/*video_head*/
+.video{overflow: hidden;position: relative;left:0;top:0;min-height:210px;}
+.video_head{height:25px;background-color: rgba(255,255,255,0.3);overflow: hidden;position: absolute;left:0;top:0;width:100%;z-index: 90000;}
+.video_head:after{content:'';display: block;height:0;clear:both;visibility: hidden;}
+
+.logo{float: left;margin-left:5px;height:25px;width:156px;background:url(../images/index_logo.png) no-repeat left center;background-size:68% 100%;}
+.head_tel{float: right;margin-right:5px;text-align: right;font-size: 12px;height:25px;line-height: 25px;}
+.head_tel>a{color: red;padding-left:15px;background:url(../images/head_tel.png) no-repeat left center;background-size:10% 95%; }
+
+.video_inner{position: absolute;left:0;top:0;width:100%;height:100%;z-index: 9998;}
+/*chat_tool*/
+.outer_chat{width:100%;background:url(../images/section_bg.jpg) no-repeat;background-size: cover;}
+.chat_tool{padding:0 4px;overflow: hidden;}
+
+/*enter_btns*/
+.enter_btns{height:44px;padding:4px 0 3px;}
+.enter_btns>*{height:44px;width:25%;float: left;font-size: 15px;line-height: 44px;text-align: center;}
+.enter_btns>button{border:0;padding:0;background:#2570f0;color: #fff;}
+.enter_btns>a{color: #fff;}
+.enter_btns span{display: inline-block;height:44px;float: left;text-align: center;overflow: hidden;}
+.enter_btns span>img{height:50%;width:auto;}
+.enter_btns_login_span01{width:32%;}
+.enter_btns_login_span02{width:65%;}
+.enter_btns_login_span03{width:100%;}
+.cYellow{color: #ffff00;}
+.mr15{margin-right:0.5%;}
+.bYellow{background: #f6bf02;}
+.bRed{background:#cf3f25;}
+.line1_cLight{border-right:1px solid #5795ff;}
+.line1_cDark{border-left:1px solid #1b58c0;}
+
+.line2_cLight{border-right:1px solid #ffd647;}
+.line2_cDark{border-left:1px solid #dbaa00;}
+
+.line3_cLight{border-right:1px solid #f46d54;}
+.line3_cDark{border-left:1px solid #ac1a00;}
+
+
+/*chatroom*/
+.chatroom{background: rgba(0,0,0,0.2);padding:0 5px;overflow-y:auto;overflow-x:hidden;}
+.chatroom_ul{height:auto;}
+.chatroom_li{overflow: hidden;height:auto;margin-bottom:9px;}
+.chatroom_li>*{font-size: 12px;color: #fff;}
+.chatroom_time{text-align: center;border-radius:5px;}
+.chatroom_user{overflow: hidden;margin-bottom:3px;}
+.chatroom_user>span{display: inline-block;height:24px;float: left;line-height: 24px;}
+.chatroom_user_icon{width:30px;position: relative;left:0;top:0;}
+.chatroom_user_icon_img{position: absolute;left:0;right:0;top:0;bottom:0;margin:auto;width:80%;}
+.chatroom_user_name{padding-right:5px;padding:0 5px;}
+.chatroom_message{max-width:85%;overflow: hidden;padding:3px 7px;font-size: 14px;line-height: 22px;background-color: #fff;color: #000;border-radius:5px;display: inline-block;}
+.chat_data_0{color: red;}
+
+/*input_tool*/
+.input_tool{height:42px;padding:3px 0 2px;}
+.input_box{width:70%;margin-right:2%;background: #fff;float:left;height:32px;font-size: 14px;line-height: 22px;padding:5px 1%;overflow-y:auto;border-radius:5px; }
+.input_btn{width:26%;background:#30a430;float:left;height:42px;border-radius:5px;}
+.input_inner_btn{height:40px;width:100%;border-radius:5px;background:#3dce3d;border:none;color: #fff;font-size: 15px;line-height: 40px;}
+
+
+/*pop_login*/
+.pop_login{display: none;}
+#register{display: none;}
+.pop_mask{width:100%;height:100%;background:rgba(0,0,0,0.54);position: fixed;left:0;top:0;z-index:9999;}
+.pop_login_inner{position: fixed;left:50%;top:50%;margin-top:-130px;margin-left:-125px;width:225px;height:275px;background: #fff;padding:15px 18px 5px;z-index:10000;}
+.pop_register_inner{position: fixed;left:50%;top:50%;margin-top:-180px;margin-left:-125px;width:225px;height:363px;background: #fff;padding:15px 18px 5px;z-index:10000;}
+.pop_login_head{color: #414141;font-size: 20px;text-align: center;height:35px;}
+.pop_login_uesr_text{overflow: hidden;margin-bottom: 10px;}
+.pop_login_uesr_text>*{float: left;height:42px;line-height: 42px;text-align: left;border:0;color: #000;}
+.pop_login_uesr_img{width:35px;position: relative;left:0;top:0;background:#2570f0;}
+.pop_login_uesr_img>img{position: absolute;left:0;top:0;right:0;bottom:0;margin:auto;height:55%;}
+.pop_login_uesr_text>input{width:163px;height:16px;border:1px solid #dcdcdc;background:#fff;padding:12px; font-size: 15px;border-left:none;line-height: 16px;}
+
+.pop_login_inner_code{overflow: hidden;margin-bottom:15px;}
+.pop_login_inner_code_input{float: left;width:100px;height:16px;border:1px solid #dcdcdc;text-align: center;font-size: 15px;line-height: 16px;padding:13px 7px;}
+.code_img{float: right;width:94px;height:41px;border:1px solid #dcdcdc;position: relative;left:0;top:0;}
+.code_img>img{position: absolute;left:0;top:0;right:0;bottom:0;}
+.pop_login_inner_btn{width:225px;height:56px;background:#356ac5;border-radius:5px;}
+.pop_login_inner_btn>button{height:46px;border:0;background:#3e83f9;width:225px;border-radius:5px;color: #fff;font-size: 19px;line-height: 46px;}
+.pop_login_inner_close{width:44px;height:44px;background:url(../images/close.png) no-repeat center center;position: absolute;top:-10px;right:-15px;}

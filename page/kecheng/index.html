@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>课程表</title>
+<link type="text/css" rel="stylesheet" href="kecheng.css"/>
+</head>
+<body>
+		<table>
+			<thead>
+				<tr>
+					<th>时间</th>
+					<th>名称</th>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+var base = parent.base;
+var html = '';
+$.get(base.url+'api/get_kecheng_list',function(d){
+	d = $.parseJSON(d);
+	var data = d.data;
+	var kecheng = d.kecheng;
+	for(var i in kecheng){
+		var info = kecheng[i];
+		html += '<tr><td class="time">'+info.start_time+'-'+info.end_time+'</td><td>'+info.curr_name+'</td><td>'+info.monday+'</td><td>'+info.tuesday+'</td><td>'+info.wednesday+'</td><td>'+info.thursday+'</td><td>'+info.friday+'</td></tr>';
+	}
+	html += '<tr class="import-data" style="height: 210px;"><td colspan="2" id="data-title">本周重点数据</td>';
+	for(var i = 1;i <= 5;i++){
+		var info = data[i];
+		if(info == undefined){
+			html += '<td><div></div></td>';
+		}else{
+			html += '<td><div>';
+			for(var j in info){
+				html += '<p>'+(parseInt(j)+1)+'、'+info[j]+'</p>';
+			}
+			html += '</div></td>';
+		}
+	}
+
+	html += '</tr>';
+	$('tbody').html(html);
+})
+</script>
+</body>
+</html>

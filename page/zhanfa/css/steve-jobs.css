@@ -1,0 +1,181 @@
+/* Steve jobs' book */
+
+@font-face {
+  font-family: 'Stempel-Garamond-W01-Roman';
+  font-style: normal;
+  font-weight: normal;
+}
+
+body, ul, table, form{
+	margin:0;
+	padding:0;
+}
+
+.animated{
+	-webkit-transition:margin-left 0.2s ease-in-out;
+	-moz-transition:margin-left 0.2s ease-in-out;
+	-o-transition:margin-left 0.2s ease-in-out;
+	-ms-transition:margin-left 0.2s ease-in-out;
+	transition:margin-left 0.2s ease-in-out;
+}
+
+#canvas{
+	width: 960px;
+	height: 540px;
+	margin: 0 auto;
+}
+
+#book-zoom{
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+}
+
+
+
+.sj-book h1{
+	font-family: "Stempel-Garamond-W01-Roman";
+	font-size: 38px;
+	font-weight: lighter;
+	margin: 20px 0;
+	color: #333;
+	-webkit-text-fill-color: #333;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 0.005em;
+}
+
+.sj-book h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#444;
+    font-size:16px;
+	letter-spacing:2px;
+	font-weight: 400;
+}
+
+.sj-book .book-content{
+	font-family: "Stempel-Garamond-W01-Roman";
+	font-size:16px;
+	margin:40px 40px;
+}
+
+.sj-book blockquote{
+	color:#586078;
+	margin:10px 0;
+	font-style:italic;
+}
+
+.sj-book blockquote:before{
+	content: "\201C";
+	color:#333D53;
+	font-size:20px;
+}
+
+.sj-book blockquote:after{
+	content: "\201D";
+	color:#333D53;
+	font-size:20px;
+}
+
+.sj-book cite{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:13px;
+	font-weight:200;
+	font-style:normal;
+	color:#666;
+}
+
+.sj-book .book-content .center-pic{
+	margin:0;
+	text-indent:0;
+	text-align:center;
+}
+
+.sj-book .zoom-this:hover{
+	opacity:0.9;
+	cursor:pointer;
+}
+
+.sj-book .book-content p{
+	text-indent: 18px;
+	margin: 20px 0;
+	line-height: 22px;
+}
+
+.sj-book .left-pic{
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-bottom:15px;
+}
+
+.animated{
+	-webkit-transition:margin-left 0.2s ease-in-out;
+	-moz-transition:margin-left 0.2s ease-in-out;
+	-o-transition:margin-left 0.2s ease-in-out;
+	-ms-transition:margin-left 0.2s ease-in-out;
+	transition:margin-left 0.2s ease-in-out;
+}
+
+
+
+.sj-book .page-number{
+	color:#999;
+	width:100%;
+	bottom:25px;
+	position:absolute;
+	display:block;
+	text-align: center;
+	line-height:30px;
+	font-size:11px;
+}
+
+.sj-book .table-contents{
+	font-size:16px;
+	width:300px;
+	margin:80px auto;
+	color:#ccc;
+}
+
+.sj-book .table-contents li{
+	list-style:none;
+	line-height:25px;
+}
+
+.sj-book .table-contents span{
+	float:right;
+}
+
+.sj-book .table-contents a{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:2px 0;
+	padding:0 10px;
+}
+
+.sj-book .table-contents a:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+.sj-book .book-content .capital,
+.sj-book .book-content .no-indent{
+	text-indent: 0;
+}
+
+
+
+
+

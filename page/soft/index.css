@@ -1,0 +1,86 @@
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	list-style:none;
+	vertical-align: middle;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* a  in the markup */
+a{text-decoration: none; cursor:pointer;}
+a:link,a:visited ,a:hover,a:active{ text-decoration: none; }
+
+a,span{display: inline-block;}
+/* a  in the markup */
+button, input, select, textarea{border:0; resize: none;}
+body{font-family: 'Microsoft YaHei';}
+/*软件下载*/
+#soft_down{width:850px;}
+.soft_down_head{height:38px;background:#1466b3 url(images/soft/soft_logo.jpg) no-repeat 30px center;}
+.soft_down_contain{padding:25px 40px;overflow: hidden;background:#fff;}
+.soft_down_contain>li{float: left;padding:50px 0 50px 30px;}
+.soft_down_contain_left{margin-right:50px;width:330px;height:230px;background:#eaf5ff;}
+.soft_down_contain_right{width:328px;height:230px;border:1px solid #d2d2d2; }
+.soft_title{overflow: hidden;font-size:14px;color: #909090;line-height: 21px; }
+.soft_title_h3{float: left;font-size: 42px;line-height: 42px;color:#3d86cb;}
+.soft_title_right{float: left;line-height: 22px;margin-left:10px;}
+.soft_title_right>span{display: block;}
+.marginRight40{margin-right: 35px;}
+.soft_as>button{color: #fff;font-family: "Microsoft YaHei";width:289px;height: 55px;cursor: pointer;}
+.soft_as>button>span{padding-left:65px;vertical-align: baseline;*padding-left:82px;}
+.soft_bts_red{background:url(images/soft/soft_red.jpg) no-repeat center center;}
+.soft_bts_blue{background:url(images/soft/soft_blue.jpg) no-repeat center center;}
+.fs18{font-size: 18px;letter-spacing: 1px;line-height: 18px;}
+.fs12{font-size: 12px;letter-spacing: -1px;}
+.bag_down{margin-left:40px;width:65px;height:26px;border-radius:3px;background:#db8389 url(images/soft/soft_icon.jpg) no-repeat 10px center;color: #fff;line-height: 26px;padding-left:35px;}
+.system_down{font-size: 17px;padding:30px 0 80px 0;width:289px;}
+.system_down>a{padding-left:120px;height:40px;line-height: 40px;background:url(images/soft/soft_bar.jpg) no-repeat center center;margin-bottom:10px;display: inline-block;color: #fff;width:169px;}
+.soft_weixin{padding:30px 0 90px 0; text-align: center;}
+.soft_weixin li{float: left; width: 50%;}
+.soft_weixin li img{margin-bottom: 10px;}

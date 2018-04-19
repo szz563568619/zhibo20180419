@@ -1,0 +1,103 @@
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	list-style:none;
+	vertical-align: middle;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+++++++++++5
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/*table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+/* a  in the markup */
+a{text-decoration: none; cursor:pointer;}
+a:link,a:visited ,a:hover,a:active{ text-decoration: none; }
+
+/* a  in the markup */a,span{display: inline-block;}
+button, input, select, textarea{border:0; resize: none;}
+body,html{ height:100%;}
+
+
+/*马甲服务*/
+#record{width:1000px;/*height:600px;*/ background:url(images/record/img11.jpg) no-repeat left top;/*position: absolute;left:50%;top:50%;margin-top:-320px;margin-left:-500px;*/ height:100%;}
+.inner_record{height:100%;}
+.record_title{height:50px;padding:25px 0 25px 75px;overflow: hidden;color: #c90000;}
+.record_title_left{float: left;height:50px;line-height: 50px;margin-right:50px;}
+/*.record_title_left>span{float: left;height:100%;}
+.fwBold{font-weight: bold;}
+.record_dian{width:12px;height:12px;border-radius: 50%;background:#c90000;margin:0 15px;}*/
+.record_title_right{float:left;font-size: 20px;line-height: 25px;*width:205px;}
+/*.fcGray{color: #979797;}*/
+
+.record_tab{padding:0 20px;width:960px;}
+
+.record_tab>ol{height:50px;}
+.record_tab>ol>li{width:320px; height:50px;background:#fe5354; color: #fff;font-size:18px;letter-spacing: 2px;line-height: 50px;text-align: center;position: relative;left:0;top:0;float: left;font-weight: bold; font-weight:600; font-family:"microsoft yahei";}
+/*.record_tab>ol>li:after{content:'';display: inline-block;height: 0;width:0;border-top:5px solid #afafaf;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom: 5px solid transparent;position: absolute;left:50%;bottom:-10px;margin-left:-10px;}*/
+/*.record_ol_li_margin_left{margin-left:10px;}*/
+.record_tab>ol .ol_li_current{background:#fff; color:#fe5354;}
+.record_tab>ol .ol_li_current:after{border-top-color:#d70000;}
+/*.record_tab>ol>li:hover{background:#d70000;}*/
+.record_tab>ol>li:hover:after{border-top-color:#d70000;}
+
+
+.record_tab>ul{overflow: hidden;}
+.record_tab>ul>li{width:100%;height:100%;overflow: hidden;float: left;display: none; padding-bottom:20px;}
+.record_tab_li_title>ul{overflow: hidden;border-bottom:none;}
+.record_tab_li_title>ul>li{float: left;text-align:center;font-size: 12px;color: #666666;height:40px;line-height: 18px;padding-top:10px;letter-spacing: -1px; color:#fff;background:url(images/record/majia_opacity.png) repeat;*background:url(images/record/majia_opacity.png) repeat; margin-right:1px;}
+/*.bdRight{border-right:1px solid #fff;}*/
+.li01{position: relative;left:0;top:0;background:url(images/record/line01.png) no-repeat center center;}
+
+.li01>span{position: absolute;left:0;top:0; color:#fff; font-size:13px;}
+.li01 .li01_span01{left:48px;top:5px;}
+.li01 .li01_span02{top:30px;left:5px;}
+
+.record_tab_li_contain{overflow-y:auto; overflow-x: hidden;font-size: 12px;}
+.record_tab_li_contain td{text-align: center;vertical-align: middle;height:33px;line-height: 33px;/*border-bottom: 1px solid #e0e0e0; */background:url(images/record/majia_opacity.png) repeat;*background:url(images/record/majia_opacity.png) repeat; color:#fff; font-size:14px;/* border-right:1px solid #e0e0e0;*/}
+/*.bdRight_colorE{border-right:1px solid #eeeeee;}
+.bdRight_colorC{border-right:1px solid #c9c9c9;}*/
+/*.record_tab_li_contain .tr_bg_white{background-color:#fff;}*/

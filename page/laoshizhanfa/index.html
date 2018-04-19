@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>老师战法</title>
+<link type="text/css" rel="stylesheet" href="css/team.css?v=5.0"/>
+</head>
+<body>
+<ul class="speciallist">
+	<li><a href="javascript:;" onclick="qq_click(this)" data-resource="bowen"><img src="images/bowen.png"><div class="detail"><span>点击了解详情</span></div></a></li>
+	<li><a href="javascript:;" onclick="qq_click(this)" data-resource="li"><img src="images/li.png"><div class="detail"><span>点击了解详情</span></div></a></li>
+	<li><a href="javascript:;" onclick="qq_click(this)" data-resource="zhuang"><img src="images/zhuang.png"><div class="detail"><span>点击了解详情</span></div></a></li>
+	<li><a href="javascript:;" onclick="qq_click(this)" data-resource="yeqiu"><img src="images/yeqiu.png"><div class="detail"><span>点击了解详情</span></div></a></li>
+</ul>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>
+function qq_click(dom){
+	var rurl = $(dom).attr('data-resource');//添加点击来源
+	if(parent.LOGIN == 0){
+		alert("该老师战法需要登录才能进行观看!");
+		parent.$('#login').click();
+	}else{
+		location.href = parent.base.url+'page/zhanfa/'+rurl+'.html';
+	}
+}
+
+</script>
+</body>
+</html>

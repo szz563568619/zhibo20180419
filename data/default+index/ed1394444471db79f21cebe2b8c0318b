@@ -1,0 +1,51 @@
+O:12:"CI_DB_result":8:{s:7:"conn_id";N;s:9:"result_id";N;s:12:"result_array";a:1:{i:0;a:12:{s:5:"title";s:21:"瑞丰财经直播间";s:8:"keywords";s:21:"瑞丰财经直播间";s:11:"description";s:234:"瑞丰财经直播间,专业的黄金喊单直播,外汇直播,期货喊单直播室.金融直播,24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。";s:5:"video";s:288:"<script type="text/javascript" src="http://static.gensee.com/webcast/static/sdk/js/gssdk.js"></script>
+<div style="height:100%; width:100%;"><gs:video-live id="videoComponent" site="yunjiewenhua.gensee.com" ctx="webcast" uname="{name}" ownerid="f8d4ebf916fc4396b2ff16c30556128f" /></div>";s:9:"obs_video";s:850:"var player = new TcPlayer('id_test_video', {
+"rtmp":"rtmp://push.dianhaikeji.com/cch/first",
+"flv": "http://push.dianhaikeji.com/cch/first.flv",
+"m3u8": "http://push.dianhaikeji.com/cch/first.m3u8",
+"autoplay" : true,
+"live" : true,
+"controls": "system",
+listener: function (msg){
+                if(msg.type == 'error'){
+                    window.setTimeout(function(){
+                        player.load();
+                    },3000);
+                }
+                if(msg.type == 'pause'){
+                    player.play();
+                }
+            },
+"wording": {
+    "1002" : "直播马上开始，请稍候...",
+    "13" : "直播马上开始，请稍候...",
+    "4" : "直播马上开始，请稍候...",
+    "5" : "直播马上开始，请稍候...",
+    "2032" : "直播马上开始，请稍候..."
+}
+});";s:12:"is_obs_video";s:1:"0";s:10:"statistics";s:387:"<span>瑞丰财经直播室,专业的黄金喊单直播,外汇直播,期货喊单直播室.24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。拥有几十人的研究服务团队，提供多家国资电子交易平台开户，在国内投资服务平台中，我们有着巨大的竞争优势。</span>";s:2:"qq";s:180:"3003787301,3003791807,3004119772, 3003706318,3003725298,3003773604,3003790247,3003750335,3003750683,3003755245,3003759143,3003766301,3003757261,3004106889，3004101106，3004136587";s:7:"qq_code";s:0:"";s:5:"phone";s:10:"4000851206";s:8:"shikuang";s:234:"瑞丰财经直播间,专业的黄金喊单直播,外汇直播,期货喊单直播室.金融直播,24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。";s:9:"forbidden";s:164:"她妈|它妈|他妈|你妈|去死|贱人|非典|艾滋病|阳痿|猥琐|垃圾|喊单群|体验群|鸿丰和宝泰|是托|骗人|不要和相信|傻逼|妈B|骗子";}}s:13:"result_object";a:1:{i:0;O:8:"stdClass":12:{s:5:"title";s:21:"瑞丰财经直播间";s:8:"keywords";s:21:"瑞丰财经直播间";s:11:"description";s:234:"瑞丰财经直播间,专业的黄金喊单直播,外汇直播,期货喊单直播室.金融直播,24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。";s:5:"video";s:288:"<script type="text/javascript" src="http://static.gensee.com/webcast/static/sdk/js/gssdk.js"></script>
+<div style="height:100%; width:100%;"><gs:video-live id="videoComponent" site="yunjiewenhua.gensee.com" ctx="webcast" uname="{name}" ownerid="f8d4ebf916fc4396b2ff16c30556128f" /></div>";s:9:"obs_video";s:850:"var player = new TcPlayer('id_test_video', {
+"rtmp":"rtmp://push.dianhaikeji.com/cch/first",
+"flv": "http://push.dianhaikeji.com/cch/first.flv",
+"m3u8": "http://push.dianhaikeji.com/cch/first.m3u8",
+"autoplay" : true,
+"live" : true,
+"controls": "system",
+listener: function (msg){
+                if(msg.type == 'error'){
+                    window.setTimeout(function(){
+                        player.load();
+                    },3000);
+                }
+                if(msg.type == 'pause'){
+                    player.play();
+                }
+            },
+"wording": {
+    "1002" : "直播马上开始，请稍候...",
+    "13" : "直播马上开始，请稍候...",
+    "4" : "直播马上开始，请稍候...",
+    "5" : "直播马上开始，请稍候...",
+    "2032" : "直播马上开始，请稍候..."
+}
+});";s:12:"is_obs_video";s:1:"0";s:10:"statistics";s:387:"<span>瑞丰财经直播室,专业的黄金喊单直播,外汇直播,期货喊单直播室.24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。拥有几十人的研究服务团队，提供多家国资电子交易平台开户，在国内投资服务平台中，我们有着巨大的竞争优势。</span>";s:2:"qq";s:180:"3003787301,3003791807,3004119772, 3003706318,3003725298,3003773604,3003790247,3003750335,3003750683,3003755245,3003759143,3003766301,3003757261,3004106889，3004101106，3004136587";s:7:"qq_code";s:0:"";s:5:"phone";s:10:"4000851206";s:8:"shikuang";s:234:"瑞丰财经直播间,专业的黄金喊单直播,外汇直播,期货喊单直播室.金融直播,24小时现货黄金走势趋势分析,美国非农,耶伦直播,美元加息,EIA原油库存,初请失业金国际趋势行情分析。";s:9:"forbidden";s:164:"她妈|它妈|他妈|你妈|去死|贱人|非典|艾滋病|阳痿|猥琐|垃圾|喊单群|体验群|鸿丰和宝泰|是托|骗人|不要和相信|傻逼|妈B|骗子";}}s:20:"custom_result_object";a:0:{}s:11:"current_row";i:0;s:8:"num_rows";i:1;s:8:"row_data";N;}

@@ -1,0 +1,48 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,p,button{margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%vertical-align: baseline;background: transparent;list-style:none;	vertical-align: middle;font-family:"microsoft yahei"; font-style:normal;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+a{ text-decoration:none;}
+input{ outline:none;}
+
+/*整体框架*/
+html, body{min-width: 1000px;}
+.zc_banner{ border-bottom:7px solid #fe5354; background:url(../images/member/bd.jpg) center center; width:100%; height:80px;}
+.zc_main{ width:1000px; margin:0 auto; overflow:hidden;}
+.zc_main_l{ width:220px; float:left; background:url(../images/member/zhuce_opacity.png) repeat;*background:url(../images/member/zhuce_opacity.png) repeat; border:1px solid #e6e6e6; padding-top:30px; border-top:none;}
+.zc_main_r{ width:740px; float:right; margin-top:45px;}
+
+/*左边区域*/
+.zc_main_l_t{ width:100%; padding-bottom:20px;}
+.zc_main_l_t img{ display:block; margin:0 auto;}
+.zc_main_l_t span{ display:block; width:100%; text-align:center; font-size:14px; color:#fe5354; margin-top:15px;}
+.zc_main_l_b,.zc_main_l_b ul{ width:100%;}
+.zc_main_l_b ul li{ width:100%;}
+.zc_main_l_b ul li a{ display:block; padding-left:85px; height:60px; line-height:60px; border-top:1px solid #e6e6e6;color:#909090; font-size:16px;}
+.zc_main_l_b ul li.shouye a{ background:url(../images/member/home.png) no-repeat 45px center;}
+.zc_main_l_b ul li.xinxi a{ background:url(../images/member/data_1.png) no-repeat 45px center;}
+
+.zc_main_l_b ul li.focus a{ color:#646464; border-left:5px solid #fe5354; padding-left:80px;}
+.zc_main_l_b ul li.focus.xinxi a{background:#fff url(../images/member/data.png) no-repeat 40px center;}
+.zc_main_l_b ul li.mima a{ background:url(../images/member/write.png) no-repeat 45px 15px;}
+.zc_main_l_b ul li.focus.mima a{background:#fff url(../images/member/write_1.png) no-repeat 40px center;}
+
+
+/*我的信息右边区域*/
+.zc_main_r h3{ width:100%; text-align:right; border-bottom:1px solid #e5e5e5; padding-bottom:20px; color:#646464; font-size:14px; font-weight:normal;}
+.zc_main_r h3 span{color:#646464; font-size:14px;}
+.zc_main_r h3 a{color:#646464; font-size:14px;}
+.zc_main_r h3 span.last{color:#fe5354;}
+.zc_main_r ul{ padding-left:20px; margin-top:20px;}
+.zc_main_r ul h4{ color:#646464; font-size:18px; font-weight:600;}
+.zc_main_r ul li{ margin-top:40px;}
+.zc_main_r ul li span{ color:#646464;}
+.zc_main_r ul li txt{color:#646464;}
+.zc_main_r ul li em{color:#646464;}
+
+/*修改密码右边区域*/
+.mm_main_r ul{ padding-left:100px; padding-top:15px;}
+.mm_main_r ul li{ margin-top:20px; overflow:hidden;}
+.mm_main_r ul li span{ font-size:14px; color:#646464; text-align:right; display:block; width:70px; float:left;line-height:36px;}
+.mm_main_r ul li input{ border:1px solid #b4b4b4; width:190px; padding-left:10px; height:36px; line-height:36px; float:left; margin-left:10px;}
+.mm_main_r ul li button{ width:180px; height:40px; line-height:40px; text-align:center; color:#fff; background:#fe5354; border:1px solid #eb2e2f; border-radius:5px; font-size:18px; font-weight:600; margin-left:80px; cursor:pointer;}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>课程表</title>
+<link type="text/css" rel="stylesheet" href="kechengbiao.css"/>
+</head>
+
+<body>
+<div class="kechengbiao" id="kechengbiao">
+	<div class="biaoge">
+		<div class="biaoge_title">
+			<ul>
+				<li class="on" id="t1">星期一</li>
+				<li id="t2">星期二</li>
+				<li id="t3">星期三</li>
+				<li id="t4">星期四</li>
+				<li id="t5">星期五</li>
+			</ul>
+		</div>
+		<div class="biaoge_main">
+			
+		</div>
+	</div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+var base = parent.base;
+var arr_week=new Array("monday","tuesday","wednesday","thursday","friday");
+$.get(base.url+'api/get_course_list', '', function (data){
+	data = $.parseJSON(data);
+	var html = '';
+	for(j in arr_week){
+		//先遍历周
+		html += '<div class="biaoge_m"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>';
+		for(i in data){
+			if((parseInt(i)+1)%5 == 0){
+				html += '<td><span class="time">'+data[i]['start_time']+'-'+data[i]['end_time']+'</span><span class="teacher">'+data[i][arr_week[j]]+'</span></td></tr><tr>';
+			}else{
+				html += '<td><span class="time">'+data[i]['start_time']+'-'+data[i]['end_time']+'</span><span class="teacher">'+data[i][arr_week[j]]+'</span></td>';
+			}
+		}
+		html += '</tr></tbody></table></div>';
+	}
+	$('.biaoge_main').append(html);
+	week_init();
+	$(".biaoge_title ul li").each(function(index){
+		$(this).click(function(){
+         show_week(index);
+        })
+	})
+})
+$(function(){
+	/*week_init();
+	$(".biaoge_title ul li").each(function(index){
+		$(this).click(function(){
+         show_week(index);
+        })
+	})*/
+	
+})
+
+function week_init(){
+	var date = new Date();
+	var index = date.getDay();
+	if(index == 0 || index == 6) index = 1;
+	show_week(index - 1);
+}
+
+function show_week(index){
+	$(".biaoge_title ul li").removeClass("on");
+	 $('.biaoge_title ul li').eq(index).addClass("on");
+	 $(".biaoge_m").css("display","none");
+	 $(".biaoge_m").eq(index).css("display","block"); 
+}
+</script>
+</body>
+</html>

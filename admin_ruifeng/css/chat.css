@@ -1,0 +1,44 @@
+* {margin: 0; padding: 0; border: none; font-size: 12px; text-align: left;}
+ul { list-style: none; }
+a{text-decoration:none;}
+
+.content { width: 100%; height: auto; margin: 0 auto; text-align: center; }
+.chatBox { width: 800px; border: 1px #666666 solid; height: auto; margin: 0 auto; position: relative; }
+.chatLeft { border-right: 1px #bebebe solid; width: 632px; height: auto; float:left; }
+.chatRight { width: 166px; height: auto; float:right; }
+.chat01_title , .chat03_title { background: url('chat/title_bg.jpg') repeat-x 0 0; height:30px; position: relative;}
+.chat01_title{line-height: 30px; padding-left: 10px; font-weight: bold;}
+.close_btn { background: url('chat/icon.png') no-repeat 0 0; position: absolute; top: 10px; right: 8px; display: block; width: 15px; height: 15px; }
+.chat02_bar { background: url('chat/chat_bar_bg.jpg') repeat-x 0 0; height: 35px; position: relative; }
+.chat02_bar ul {height: 100%;}
+.chat02_bar li { position: absolute; }
+.chat03_title_t { background: url('chat/icon.png') no-repeat 0px -370px; position: absolute; padding-left: 25px; top: 8px; left: 20px; display: block; width: auto; height: 15px; font-size:12px; font-weight:bold; }
+
+.chat_main { height: 350px; overflow-x: hidden; overflow-y: auto; background-color: #f3f3f3;border-bottom: 1px solid #d8d6d6;}
+.chat02_content { height: auto; }
+.visitor_list { text-align: left; font-size: 12px; color: #333; height: 501px; overflow-x: hidden; overflow-y: auto;}
+.chat02_content textarea, .chat02_content textarea:focus{ border: medium none; display: block; width:622px; height: 96px; overflow-y: auto; padding: 5px; resize: none; outline: none;}
+.visitor_list ul li a { color: #333;display: block; line-height: 31px; text-align: center; }
+.visitor_list ul li a:hover{background: #fcf0c1;}
+.visitor_list ul li a.active{background: #fbe798;}
+.visitor_list ul li a.new{background: url('chat/new.png') no-repeat 20px;}
+.visitor_list ul li { position: relative; margin: 3px 0; background: #ebebeb; height: 31px; _padding-bottom:0px; }
+.visitor_list ul img { width: 30px; height: 30px; }
+
+
+/*聊天内容部分*/
+.chat{ width:auto; overflow-y:auto;}
+.chat_main{ width:auto; padding:0 10px 10px;}
+.chat_main ul{ overflow:hidden;}
+.chat_main ul li{ overflow:hidden; margin-top:20px; clear:both; width:100%;}
+.chat_right_top{ overflow:hidden;}
+.chat_main ul li.benren{ float:right; padding-bottom:15px;}
+.chat_main ul li.benren .chat_right{ float:right;margin-left:0; width: 100%;}
+.chat_main ul li.benren .chat_right_top span label{float:right; padding-left:20px; padding-right:0;}
+.chat_main ul li.benren .chat_right_top span{ text-align:right;}
+.chat_main ul li.benren .say{ color:#428bca; float:right;}
+
+.chat_right{ float:left; width: 100%;}
+.chat_right_top span{ display:inline-block; font-size:14px; display:block;}
+.chat_right_top span label{ float:left; padding-right:20px;}
+.say{ margin-top:10px; display:inline-block; font-size:12px; background:#fff; border-radius:5px; color:#000; padding:5px 10px; line-height:26px; text-indent:0.5em; max-width:560px; color:#323232; word-wrap: break-word;}

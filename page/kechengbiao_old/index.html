@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>课程表</title>
+<link type="text/css" rel="stylesheet" href="kechengbiao.css"/>
+</head>
+
+<body>
+<div class="kechengbiao" id="kechengbiao">
+	<div class="biaoge">
+		<h2 class="biaoge_title"><img src="images/kcb_title.png" alt=""/></h2>
+		<table cellspacing="2" class="course_list">
+			<tr  class="class_table_tr_head">
+				<td>直播时间</td>
+				<td>星期一</td>
+				<td>星期二</td>
+				<td>星期三</td>
+				<td>星期四</td>
+				<td>星期五</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>
+var base = parent.base;
+$.get(base.url+'api/get_course_list', '', function (data){
+	data = $.parseJSON(data);
+	var html = '';
+	for(i in data){
+		html += '<tr class="class_table_tr_body"><td>'+data[i]['start_time']+'-'+data[i]['end_time']+'</td><td>'+data[i]['monday']+'</td><td>'+data[i]['tuesday']+'</td><td>'+data[i]['wednesday']+'</td><td>'+data[i]['thursday']+'</td><td class="no_border">'+data[i]['friday']+'</td></tr>';
+	}
+	$('.course_list').append(html);
+})
+
+</script>
+</body>
+</html>

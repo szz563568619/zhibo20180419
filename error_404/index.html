@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/404.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+<style type="text/css">
+#chatframe {
+    position: absolute;
+    z-index: 104;
+    height: 465px;
+    width: 650px;
+    top: 20%;
+    left: 30%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#chatTileIfame {
+    height: 37px;
+    width: 100%;
+    background: rgb(90, 151, 201);
+    cursor: move;
+}
+#chatframediv {
+    z-index: 104;
+    height: 444px;
+    width: 650px;
+    overflow: hidden;
+}
+#chatframe lable {
+    background: url(images/kf_xb1.png);
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 13px;
+}
+#chatframe font {
+    height: 16px;
+    width: 31px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+#colseChatIframe {
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    margin-right: 11px;
+    color: #fff;
+    margin-top: 4px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<em>IP1:</em>
+<div class="bg404_center">
+        <p>非常抱歉！您访问的页面不存在。</p>
+        <span>请联系客服提供帮助</span>
+  		<a class="back_zbs" href="/"></a>
+  		<a class="kefu" href="javascript:" onclick="qq_start()"></a>
+  	</div>
+<script type="text/javascript">
+
+var qq_start = function (){
+    var Arr=["tencent://message/?Menu=yes&uin=2852270074&Service=58&SigT=8F859D56400711946FB3601AA22FC4B1B717B1298DA3C17BFFF23DC5EEC55564B07991698128285AF29277B8F7DCDE0154A29DE3AB5159DE48C838D381FA2E181E8493F7EEDECC39F59F437541BDBAE2DDC0F399A15A8852&QiDian=2852060377&QiDianAssignID=2852270074&WPAType=2&QiDianSigT=8F859D56400711946FB3601AA22FC4B1B717B1298DA3C17BFFF23DC5EEC55564B07991698128285AF29277B8F7DCDE0154A29DE3AB5159DE48C838D381FA2E181E8493F7EEDECC39F59F437541BDBAE2DDC0F399A15A8852","tencent://message/?Menu=yes&uin=2852270073&Service=58&SigT=70340A5F61B2BB1A4120EC20F6129FC91E88B5596954434F51BD103B72626CC1F15D6C36644F1B50EAC5614014820DF23AB94A7B8BFA1ADE0F8EEA4ABFCCF9D8FB64533D14B99634DE54D95B352D528374D6BE02BF1294CC&QiDian=2852060377&QiDianAssignID=2852270073&WPAType=2&QiDianSigT=70340A5F61B2BB1A4120EC20F6129FC91E88B5596954434F51BD103B72626CC1F15D6C36644F1B50EAC5614014820DF23AB94A7B8BFA1ADE0F8EEA4ABFCCF9D8FB64533D14B99634DE54D95B352D528374D6BE02BF1294CC","tencent://message/?Menu=yes&uin=2852266393&Service=58&SigT=E8F3E2259EE020D551D2EE986F503402081A6DC205AAB035423B02C800CCFD87C8A77D63C278EA6308070CD92F8CB95CBAB830965901E1661B9B61C47E4849E4064AA061AA6B908B6DE4DEFE7ABEE8317D01186E6DF2E8E0&QiDian=2852060377&QiDianAssignID=2852266393&WPAType=2&QiDianSigT=E8F3E2259EE020D551D2EE986F503402081A6DC205AAB035423B02C800CCFD87C8A77D63C278EA6308070CD92F8CB95CBAB830965901E1661B9B61C47E4849E4064AA061AA6B908B6DE4DEFE7ABEE8317D01186E6DF2E8E0","tencent://message/?Menu=yes&uin=2852266395&Service=58&SigT=89FBB9B960436205F542A2578D525A537158E1AE473651244E4EE7F3A89B63D8AC953C91BB8FEC87E62DD6827F6F86D60C18050E2ADDAC282CE38D296E7E39333D8D19ECF93752C2635F1C9E9FB0BBE1A391877355BE5A60&QiDian=2852060377&QiDianAssignID=2852266395&WPAType=2&QiDianSigT=89FBB9B960436205F542A2578D525A537158E1AE473651244E4EE7F3A89B63D8AC953C91BB8FEC87E62DD6827F6F86D60C18050E2ADDAC282CE38D296E7E39333D8D19ECF93752C2635F1C9E9FB0BBE1A391877355BE5A60","tencent://message/?Menu=yes&uin=2852266394&Service=58&SigT=7D914DD92087AC3B9062198981FA7F7AE970101F1618CFA8B1148B3F42B80A7CA13FF1EC3B71665E51F426EC0DCA8565AE86B07125D44C021C90DA0A5B87F30EB470D977AB7EED1C9B875320241467D18BAA8DF2E5E908FE&QiDian=2852060377&QiDianAssignID=2852266394&WPAType=2&QiDianSigT=7D914DD92087AC3B9062198981FA7F7AE970101F1618CFA8B1148B3F42B80A7CA13FF1EC3B71665E51F426EC0DCA8565AE86B07125D44C021C90DA0A5B87F30EB470D977AB7EED1C9B875320241467D18BAA8DF2E5E908FE"];  
+	var n=Math.floor(Math.random() * Arr.length);
+	if (localStorage.qqnumber1)
+	{ var qqnumber2=localStorage.qqnumber1;
+		  if (qqnumber2!=Arr[n])
+		  { var qqtc=document.createElement('iframe');
+	            qqtc.src=qqnumber2;
+	            qqtc.style.display="none";
+	            document.body.appendChild(qqtc);
+		  }
+	} else {
+	localStorage.qqnumber1=Arr[n];
+	var qqtc=document.createElement('iframe');
+	qqtc.src=Arr[n];
+	qqtc.style.display="none";
+	document.body.appendChild(qqtc);
+	}
+}
+qq_start();
+  </script>
+</body>
+</html>

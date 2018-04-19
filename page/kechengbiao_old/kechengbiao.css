@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*课程表*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{	margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;	vertical-align: baseline;background: transparent;list-style:none;vertical-align: middle;}
+html,body,.kechengbiao{ height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {	quotes: none;}
+.kechengbiao{width:1000px;border-radius:5px;background:url(images/kechengbiaao.jpg) no-repeat center center;background-size: cover; margin:0 auto;}
+
+.biaoge{position: relative;left:0;top:0;margin:auto;padding-top:10px;text-align: center; padding:15px;}
+
+.biaoge h2{ font-weight:600; padding-bottom:10px;}
+
+.biaoge h2 img{ width:212px; height:47px; margin:0 auto;}
+
+.class_table{position: absolute;left:0;top:0;}
+
+.class_table td{vertical-align: middle;}
+
+.class_table_tr_head{height:50px;font-size: 20px;color:#fff;font-weight: bold;*height:42px;}
+
+.class_table_tr_head td{padding:0 10px;width:140px;background-color:#fe5354; font-family:"microsoft yahei";}
+
+.class_table_tr_body{color:#6c3c26;font-size: 18px;height:40px;border-bottom:1px solid #a76c15;}
+
+.class_table_tr_body .no_border{border:none;}
+
+.class_table_tr_body td{background:url(images/opacity.png) repeat; color:#fff;}
+
+.color02{background:#ffe186;}
+

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>行情动态</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="keywords" content="行情动态">
+<meta name="description" content="行情动态">
+<link href="live.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+	<body>
+    	<div class="hq_table">
+	     	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	          <tr id="szzs">
+	            <td>上证指数</td>
+	            <td class="red" align="right">---</td>
+	            <td><span class="red_Bg">---</span></td>
+	          </tr> 
+	          <tr id="szcz">
+	            <td>深证成指</td>
+	            <td class="red" align="right">---</td>
+	            <td><span class="red_Bg">---</span></td>
+	          </tr>
+	          <tr id="cyb">
+	            <td>创业板指</td>
+	            <td class="red" align="right">---</td>
+	            <td><span class="red_Bg">---</span></td>
+	          </tr>
+	        </table>
+     	</div>
+		<script type="text/javascript">
+			
+			function refresh_fuc(){  
+				$.ajax({
+					cache : true,  
+					url:"http://hq.sinajs.cn/list=s_sh000001,s_sz399001,s_sz399006",  
+					type : "GET",  
+					dataType : "script",  
+					success : function(){  
+						// 上证指数
+						var szzs=hq_str_s_sh000001.split(",");  
+						var szzs1 = parseFloat(szzs[1]).toFixed(2);
+						var szzs2 = parseFloat(szzs[2]).toFixed(2);
+						var szzs3 = parseFloat(szzs[3]).toFixed(2);
+						$("#szzs td:eq(1)").html(szzs1);
+						$("#szzs td:eq(2) span").html(szzs3 + '%');
+						$("#szzs td:eq(1)").removeClass();
+						$("#szzs td:eq(2) span").removeClass();
+						if (szzs2 < 0) {
+							$("#szzs td:eq(1)").addClass('green');
+							$("#szzs td:eq(2) span").addClass('green_Bg');
+						} else if (szzs2 > 0) {
+							$("#szzs td:eq(2) span").html("+" + szzs3 + '%');
+							$("#szzs td:eq(1)").addClass('red');
+							$("#szzs td:eq(2) span").addClass('red_Bg');
+						} else {
+							$("#szzs td:eq(1)").addClass('gray');
+							$("#szzs td:eq(2) span").addClass('gray_Bg');
+						}
+						// 深成指
+						var szcz=hq_str_s_sz399001.split(",");  
+						var szcz1 = parseFloat(szcz[1]).toFixed(2);
+						var szcz2 = parseFloat(szcz[2]).toFixed(2);
+						var szcz3 = parseFloat(szcz[3]).toFixed(2);
+						$("#szcz td:eq(1)").html(szcz1);
+						$("#szcz td:eq(2) span").html(szcz3 + '%');
+						$("#szcz td:eq(1)").removeClass();
+						$("#szcz td:eq(2) span").removeClass();
+						if (szcz2 < 0) {
+							$("#szcz td:eq(1)").addClass('green');
+							$("#szcz td:eq(2) span").addClass('green_Bg');
+						} else if (szcz2 > 0) {
+							$("#szcz td:eq(2) span").html('+'+szcz3 + '%');
+							$("#szcz td:eq(1)").addClass('red');
+							$("#szcz td:eq(2) span").addClass('red_Bg');
+						} else {
+							$("#szcz td:eq(1)").addClass('gray');
+							$("#szcz td:eq(2) span").addClass('gray_Bg');
+						}
+						// 创业板
+						var cyb=hq_str_s_sz399006.split(",");  
+						var cyb1 = parseFloat(cyb[1]).toFixed(2);
+						var cyb2 = parseFloat(cyb[2]).toFixed(2);
+						var cyb3 = parseFloat(cyb[3]).toFixed(2);
+						$("#cyb td:eq(1)").html(cyb1);
+						$("#cyb td:eq(2) span").html(cyb3 + '%');
+						$("#cyb td:eq(1)").removeClass();
+						$("#cyb td:eq(2) span").removeClass();
+						if (cyb2 < 0) {
+							$("#cyb td:eq(1)").addClass('green');
+							$("#cyb td:eq(2) span").addClass('green_Bg');
+						} else if (cyb2 > 0) {
+							$("#cyb td:eq(2) span").html('+'+cyb3 + '%');
+							$("#cyb td:eq(1)").addClass('red');
+							$("#cyb td:eq(2) span").addClass('red_Bg');
+						} else {
+							$("#cyb td:eq(1)").addClass('gray');
+							$("#cyb td:eq(2) span").addClass('gray_Bg');
+						}
+					}
+				});
+				setTimeout(function() {refresh_fuc();}, 1000);
+			}
+			
+			$(document).ready(function() {
+				refresh_fuc();
+			});
+			
+		</script>
+  	</body>
+</html>
